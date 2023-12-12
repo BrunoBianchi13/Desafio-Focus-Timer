@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-svg">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+
+  <div id="main">
+    <div id="app">
+      
+      <button id="toggle-mode">
+        <i id="sun" class="ph-bold ph-sun"></i>
+        <i id="moon" class="ph-bold ph-moon"></i>
+      </button>
+  
+      <section id="timer">
+        <span id="minutes">00</span>
+        <span >:</span>
+        <span id="seconds">00</span>
+      </section>
+      <section id="controls" class="flex">
+        <button id="play" class=" ph ph-play-circle "></button>
+        <button id="pause" class="ph ph-pause-circle"></button>
+        <button id="timer-i" class="ph ph-timer "></button>
+        <button id="reset" class="ph ph-stop-circle "></button>
+        <button id="plus" class="ph ph-plus-circle"></button>
+        <button id="minus" class="ph ph-minus-circle"></button>
+      </section>
+    </div>
+  
+    <div id="app">
+      
+      <div id="cards">
+        <div id="card">
+
+          <button id="btn-tree" class="btn-card off  ph ph-tree"></button>
+          <button id="btn-tree-on" class="btn-card on hide  ph ph-tree"></button>
+        </div>
+        <div id="card">
+          <button id="btn-rain" class="btn-card off ph ph-cloud-rain"></button>
+          <button id="btn-rain-on" class="btn-card on hide  ph ph-cloud-rain"></button>
+        </div>
+        <div id="card">
+          <button id="btn-cofee" class="btn-card off ph ph-coffee"></button>
+          <button id="btn-cofee-on" class="btn-card on hide  ph ph-coffee"></button>
+        </div>
+        <div id="card">
+          <button id="btn-campfire" class="btn-card off ph ph-campfire "></button>
+          <button id="btn-campfire-on" class="btn-card on hide ph ph-campfire"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
